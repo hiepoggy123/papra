@@ -105,6 +105,10 @@ export function getAuth({
       ipAddress: {
         ipAddressHeaders: config.auth.ipAddressHeaders,
       },
+      defaultCookieAttributes: {
+        sameSite: 'none',
+        secure: true,
+      }, 
     },
     socialProviders: {
       github: {
